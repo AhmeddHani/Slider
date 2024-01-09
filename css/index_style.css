@@ -1,0 +1,116 @@
+
+body
+{
+    
+    /* background-image: url(../imges/lights-dark-red-white-car-street.jpg); */
+    background-size: cover;
+    font-family: Roboto, Arial;
+    font-size: 0.8em;
+}
+
+.item
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.item-caption
+{
+    background-color: #fff;
+    padding: 5px;
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    /* left: 10%; */
+}
+
+/* #carImg
+{
+    width: 100px;
+    position: absolute;
+} */
+
+#lightBox-container
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#lightBox-Item
+{
+    width: 50%;
+    height: 70%;
+    background-image: url(../imges/pexels-dvisuals-8921878.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#close
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+@media  (max-width: 600px)
+{
+    #lightBox-Item
+    {
+        width: 100%;
+        height: 50%;
+        font-size: 0.8em;
+    }
+    .item .item-caption 
+    {
+        width: 60%;
+        height: 110px;
+        
+    }
+} 
+
+@media (min-width: 992px) 
+{
+
+    body
+    {
+        font-size: 1em;
+    }
+
+}
+@media (max-width: 768px) 
+{
+    body
+    {
+        font-size: 1em;
+    }
+
+
+}
+@media (max-width: 800px) 
+{
+    #lightBox-Item
+    {
+        width: 80%;
+        height: 50%;
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 1000px) 
+{
+    #lightBox-Item
+    {
+        width: 70%;
+        height: 50%;
+    
+    }
+}
+
